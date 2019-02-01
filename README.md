@@ -1,6 +1,6 @@
 # piprism-client
 
-My version of a smart mirror based on a Vue.js. </br>
+This is my version of a smart mirror. </br>
 It should provide next features:
 <ul>
   <li>Google Assistant voice control with addition of custom commands</li>
