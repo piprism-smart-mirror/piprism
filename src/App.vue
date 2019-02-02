@@ -16,10 +16,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 4em;
   color: white;
   background-color: black;
   margin: 0;
   padding: 0;
+}
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(-200px);
+  opacity: 0;
 }
 </style>
