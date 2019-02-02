@@ -16,7 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 5em;
+  font-size: 4em;
   color: white;
   background-color: black;
   margin: 0;
