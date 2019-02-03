@@ -11,16 +11,22 @@ export default {
 </script>
 
 <style>
+/* common look and feel for whole app */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: white;
   background-color: black;
   margin: 0;
   padding: 0;
 }
+div {
+  display: flex;
+  flex-direction: column;
+}
+/* animations */
 .slide-fade-enter-active {
   transition: all .3s ease;
 }

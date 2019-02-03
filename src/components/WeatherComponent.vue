@@ -1,11 +1,9 @@
 <template>
   <div id="weather">
-    <table>
-      <tr>
-        <td>{{ weatherText }}</td>
-        <td><img v-bind:src="weatherIcon" align="middle"/></td>
-      </tr>
-    </table>
+    {{ weatherText }}
+    <div>
+      <img v-bind:src="weatherIcon"/>
+    </div>
   </div>
 </template>
 
@@ -56,13 +54,15 @@ export default {
 <style scoped>
 #weather {
   font-size: 2.5em;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
 }
 img {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: .5em;
+  margin-right: 0;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 0;
-  width: 1.5em;
+  width: 1.2em;
 }
 </style>
