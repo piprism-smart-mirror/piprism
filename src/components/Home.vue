@@ -41,7 +41,7 @@ export default {
     setTimeout(() => { this.showTime = true }, 500)
     setTimeout(() => { this.showDate = true }, 1000)
     setTimeout(() => { this.showWeather = true }, 1500)
-    setTimeout(() => { this.showNews = true }, 1500)
+    setTimeout(() => { this.showNews = true }, 2000)
   }
 }
 </script>

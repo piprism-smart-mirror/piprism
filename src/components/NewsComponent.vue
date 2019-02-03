@@ -2,12 +2,15 @@
   <div id="news">
     <a href="https://newsapi.org/">powered by NewsAPI.org</a>
     <transition-group name="list">
-      <div v-for="article in news" :key="article.title" class="list-item">
-        <h4 class="article-title">{{ article.title }}</h4>
-        <div class="article-time">{{ article.time }}</div>
-        <hr/>
+      <div v-for="article in news" :key="article.title" class="list-item article">
+        <div>
+          <img v-bind:src="article.image"/>
+        </div>
+        <div>
+          <h4 class="article-title">{{ article.title }}</h4>
+          <div class="article-time">{{ article.time }}</div>
+        </div>
       </div>
-      <hr/>
     </transition-group>
   </div>
 </template>
@@ -43,11 +46,9 @@ export default {
       return `${date}/${month}/${year}, ${hours}:${minutes}`
     },
     getLatestNews: function () {
-      var key = '656971cf7fe74823aa24fc9853aa1c99'
       var url = 'https://newsapi.org/v2/top-headlines?'
       var country = 'ua'
-      var authHeader = { 'X-Api-Key': key }
-
+      var authHeader = { 'X-Api-Key': '656971cf7fe74823aa24fc9853aa1c99' }
       this.$http.get(`${url}country=${country}`, { headers: authHeader }).then(response => {
         if (response === null || response['status'] !== 200) {
           this.showErrorMessage()
@@ -71,7 +72,7 @@ export default {
     }
   },
   mounted () {
-    setTimeout(() => { this.getLatestNews() }, 1500)
+    setTimeout(() => { this.getLatestNews() }, 2000)
     setInterval(() => { this.getLatestNews() }, 1800000)
   }
 }
@@ -82,23 +83,30 @@ a {
   color: white;
   text-decoration: none;
   font-weight: normal;
-  font-size: .8em;
-  width: 100%;
-  float: right;
-  text-align: right;
-  margin-bottom: 1em;
+  font-size: .7em;
+  margin-top: 1em;
+  align-self: flex-end;
 }
 img {
-  width: 3em;
-  display: inline-flex;
+  margin-left: 0;
+  margin-right: 1em;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 6em;
+}
+.article {
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 1em;
 }
 .article-title {
+  margin: 0;
   margin-bottom: 0.2em;
   font-size: 1.1em;
   text-align: justify;
 }
 .article-time {
-  font-weight: bold;
+  font-weight: normal;
   font-size: .8em;
 }
 </style>
