@@ -31,4 +31,11 @@ body {
   transform: translateX(-200px);
   opacity: 0;
 }
+.list-enter-active, .list-leave-active {
+  transition: all .3s ease;
+}
+.list-enter, .list-leave-to {
+  transform: translateX(-200px);
+  opacity: 0;
+}
 </style>
