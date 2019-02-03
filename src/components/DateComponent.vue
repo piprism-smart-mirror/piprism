@@ -10,7 +10,7 @@ export default {
     return {
       date: '',
       daysOfWeek: [
-        'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя'
+        'Неділя', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота'
       ]
     }
   },
@@ -18,7 +18,7 @@ export default {
     setInterval(() => {
       var currentDate = new Date()
 
-      var day = currentDate.getDay() - 1
+      var day = currentDate.getDay()
       var date = currentDate.getDate()
       var month = currentDate.getMonth()
       var year = currentDate.getFullYear()
