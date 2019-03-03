@@ -1,7 +1,13 @@
 # piprism-client
 
 This is my version of a smart mirror. </br>
-It should provide next features:
+It consist of two main parts:
+<ol>
+  <li>Vue.js client-side - provides flexible modern UI</li>
+  <li>Python Flask server-side - supplements the client with back end functionality that is way too complicated and/or cannot be implemented at all with Java Script and web-based frameworks</li>
+</ol> 
+</br>
+It should provide the next features:
 <ul>
   <li>&#10006;&nbsp Google Assistant voice control with addition of custom commands</li>
   <li>&#10004;&nbsp Show date, time, weather, news, etc</li>
@@ -13,7 +19,7 @@ It should provide next features:
   <li>&#10006;&nbsp Detect user presence and turn the lighting accordingly</li>
 </ul>
 
-## Build Setup
+## Client Build Setup
 
 ``` bash
 # install dependencies
@@ -29,4 +35,3 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
