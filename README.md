@@ -5,8 +5,7 @@ It consist of two main parts:
 <ul>
   <li>Vue.js client-side - provides flexible modern UI</li>
   <li>Python Flask server-side - supplements the client with back end functionality that is way too complicated and/or cannot be implemented at all with Java Script and web-based frameworks</li>
-</ul> 
-</br>
+</ul>
 
 ## It should provide the next features:
 
