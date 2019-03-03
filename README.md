@@ -1,4 +1,4 @@
-# piprism-client
+# PiPrism Smart Mirror
 
 This is my version of a smart mirror. </br>
 It consist of two main parts:
