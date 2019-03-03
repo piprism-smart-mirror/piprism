@@ -16,10 +16,11 @@
 </template>
 
 <script>
-import TimeComponent from './TimeComponent'
-import DateComponent from './DateComponent'
-import WeatherComponent from './WeatherComponent'
-import NewsComponent from './NewsComponent'
+// @ is an alias to /src
+import TimeComponent from '@/components/TimeComponent'
+import DateComponent from '@/components/DateComponent'
+import WeatherComponent from '@/components/WeatherComponent'
+import NewsComponent from '@/components/NewsComponent'
 
 export default {
   name: 'Home',
@@ -34,7 +35,8 @@ export default {
       showTime: false,
       showDate: false,
       showWeather: false,
-      showNews: false
+      showNews: false,
+      apiTest: ''
     }
   },
   mounted () {
@@ -45,6 +47,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-</style>
